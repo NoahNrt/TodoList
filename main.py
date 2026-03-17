@@ -21,14 +21,16 @@ class Task:
             self.title = title
         if description is not None:
             self.description = description
-        # I think u will not edit a fcking id.. How dare you! 
+        # I think u will not edit a fucking id.. How dare you! 
 
     def status (self): # For getting a status
         print(f"{self.title} {self.description} {self.id}")
 
-    def __str__ (self): # just for the ID - I will maybe transform this to a UUID but shorted one :D
+    def __str__ (self): # just for the ID - I will maybe transform this to a UUID but a shorted one :D
         return f"{self.id}"
 
 
 aufgabe1 = Task("Jesus", "Bitte bring mich um")
 aufgabe1.status()
+aufgabe2 = Task("Jesus", "Bitte bring mich um")
+aufgabe2.status()
